@@ -1,14 +1,33 @@
 import { Star } from "lucide-react";
+import { useEffect, useState, useRef } from "react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Testimonials = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    if (!api) return;
+
+    // Iniciar auto-play
+    intervalRef.current = setInterval(() => {
+      api.scrollNext();
+    }, 3000);
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [api]);
   const testimonials = [
     {
       name: "Jefferson Vinicius Silva Lopes",
@@ -96,6 +115,7 @@ const Testimonials = () => {
 
         <div className="max-w-5xl mx-auto">
           <Carousel
+            setApi={setApi}
             opts={{
               align: "start",
               loop: true,
