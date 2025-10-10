@@ -125,9 +125,9 @@ const Testimonials = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2">
-                    <Card className="h-full bg-card border-border hover:shadow-elegant transition-all duration-300">
-                      <CardContent className="p-6">
+                  <div className="p-2 h-full">
+                    <Card className="h-[280px] bg-card border-border hover:shadow-elegant transition-all duration-300 flex flex-col">
+                      <CardContent className="p-6 flex flex-col h-full">
                         <div className="flex gap-1 mb-4">
                           {[...Array(testimonial.rating)].map((_, i) => (
                             <Star
@@ -136,10 +136,10 @@ const Testimonials = () => {
                             />
                           ))}
                         </div>
-                        <p className="text-foreground mb-4 min-h-[100px]">
+                        <p className="text-foreground mb-4 flex-1 overflow-y-auto text-sm">
                           "{testimonial.text}"
                         </p>
-                        <p className="text-primary font-semibold">
+                        <p className="text-primary font-semibold mt-auto">
                           {testimonial.name}
                         </p>
                       </CardContent>
