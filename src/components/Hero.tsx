@@ -26,8 +26,7 @@ const Hero = () => {
 
             {/* H2 - Descrição da empresa */}
             <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Mais do que uma fábrica, somos um empreendimento em expansão com metas claras para crescimento sólido. 
-              Entregamos equipamentos que resistem ao tempo e elevam o padrão de quem os utiliza.
+              Rinoxer Fabricação de Cozinha Industrial em Aço Inox
             </h2>
 
             {/* Slogan */}
