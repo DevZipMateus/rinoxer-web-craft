@@ -136,7 +136,7 @@ const Testimonials = () => {
                             />
                           ))}
                         </div>
-                        <p className="text-foreground mb-4 flex-1 overflow-y-auto text-sm">
+                        <p className="text-foreground mb-4 flex-1 text-sm line-clamp-6">
                           "{testimonial.text}"
                         </p>
                         <p className="text-primary font-semibold mt-auto">
