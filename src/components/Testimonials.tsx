@@ -60,6 +60,26 @@ const Testimonials = () => {
       text: "As mesas ficaram ótimas, atendimento excelente!",
       rating: 5,
     },
+    {
+      name: "Wellington Vertuli",
+      text: "Produtos são executados com qualidade obedecendo os prazos, alem de conseguirem excelentes preços.",
+      rating: 5,
+    },
+    {
+      name: "Anderson Castro",
+      text: "Fui super bem atendido pela Juliana, pia e mesa de qualidade e foi entregue antes do prazo.",
+      rating: 5,
+    },
+    {
+      name: "Luciana Rocha",
+      text: "Ótimo atendimento e peças de Excelente qualidade. Fiz minha compra e já estou anciosa para os novos pedidos.",
+      rating: 5,
+    },
+    {
+      name: "Maximize Movie",
+      text: "Atendimento nota dez, sanaram todas as minhas dúvidas, os pedidos foram realizados em curtíssimo prazo, os produtos são de ótima qualidade, a instalação é limpa e organizada, por ter sido dentro de uma padaria, isso foi de grande valia. Volto a fazer negócios em breve.",
+      rating: 5,
+    },
   ];
 
   return (
