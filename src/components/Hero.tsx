@@ -80,7 +80,7 @@ const Hero = () => {
               muted 
               playsInline
             >
-              <source src="/galeria/videos/_mais_que_uma_empresa_um_sonho_que_vira_realidade..mp4" type="video/mp4" />
+              <source src="/galeria/video/hero.mp4" type="video/mp4" />
               Seu navegador não suporta vídeos.
             </video>
           </div>
