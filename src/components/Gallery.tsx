@@ -20,10 +20,9 @@ const Gallery = () => {
     { type: "image", src: "/galeria/midia_6.jpg", alt: "Produto Rinoxer 2" },
     { type: "image", src: "/galeria/midia_7.jpg", alt: "Produto Rinoxer 3" },
     { type: "image", src: "/galeria/midia_8.jpg", alt: "Produto Rinoxer 4" },
-    { type: "video", src: '/galeria/videos/_cada_entrega_e_uma_nova_historia_contada_atraves_do_nosso_trabalho.".mp4' },
-    { type: "video", src: '/galeria/videos/_compromisso_assumido_servico_entregue_seguimos_em_frente_com_profissionalismo.".mp4' },
-    { type: "video", src: "/galeria/videos/_mais_que_uma_empresa_um_sonho_que_vira_realidade..mp4" },
-    { type: "video", src: '/galeria/videos/_mais_um_projeto_saindo_do_papel_e_ganhando_forma. veja o resultado da finalização deste balcão refrigerado!".mp4' },
+    { type: "video", src: "/galeria/video/1.mp4" },
+    { type: "video", src: "/galeria/video/2.mp4" },
+    { type: "video", src: "/galeria/video/3.mp4" },
   ];
 
   // Configurar intervalo para imagens
