@@ -33,7 +33,7 @@ const Hero = () => {
             </h2>
 
             {/* Slogan */}
-            <p className="text-2xl md:text-3xl font-semibold text-primary mb-12">
+            <p className="text-2xl font-semibold mb-12 text-slate-50 md:text-3xl">
               A Força em Aço Inox
             </p>
 
