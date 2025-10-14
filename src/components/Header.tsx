@@ -45,7 +45,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button onClick={() => scrollToSection("home")} className="flex items-center space-x-3 transition-transform duration-300 hover:scale-105" aria-label="Ir para início">
-            <img src={logoRinoxer} alt="Rinoxer - A Força em Aço Inox" className="h-12 w-auto brightness-0 saturate-100" style={{ filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(200deg) brightness(102%) contrast(97%)' }} />
+            <img src={logoRinoxer} alt="Rinoxer - A Força em Aço Inox" style={{
+            filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(200deg) brightness(102%) contrast(97%)'
+          }} className="h-32 w-auto brightness-0 saturate-100" />
           </button>
 
           {/* Desktop Navigation */}
