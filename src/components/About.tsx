@@ -50,14 +50,33 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Nossa jornada
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Uma história de resiliência, evolução e comprometimento com a qualidade
-          </p>
+        {/* Header with Video */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Texto à esquerda */}
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Nossa jornada
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Uma história de resiliência, evolução e comprometimento com a qualidade
+              </p>
+            </div>
+            
+            {/* Vídeo à direita */}
+            <div className="flex items-center justify-center">
+              <video 
+                className="w-full h-auto rounded-lg shadow-elegant" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+              >
+                <source src="/galeria/video/hero.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos.
+              </video>
+            </div>
+          </div>
         </div>
 
         {/* Timeline */}

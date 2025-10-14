@@ -15,19 +15,18 @@ const Hero = () => {
   };
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative">
-      {/* Background Image with Overlay */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
           src="/hero-background.jpg" 
           alt="Cozinha Industrial em Aço Inox" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/90"></div>
       </div>
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-          {/* Lado Esquerdo - Texto */}
-          <div className="text-center lg:text-left animate-fade-in">
+        <div className="max-w-4xl mx-auto">
+          {/* Texto centralizado */}
+          <div className="text-center animate-fade-in">
             {/* H1 - Nome da empresa */}
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6">
               Rinoxer
@@ -44,7 +43,7 @@ const Hero = () => {
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
                 href="https://wa.me/5519983134643" 
                 target="_blank" 
@@ -64,33 +63,19 @@ const Hero = () => {
 
             {/* Trust badges */}
             <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center lg:text-left">
+              <div className="text-center">
                 <div className="text-4xl font-bold text-primary mb-2">10+</div>
                 <div className="text-sm text-muted-foreground">Anos de experiência</div>
               </div>
-              <div className="text-center lg:text-left">
+              <div className="text-center">
                 <div className="text-4xl font-bold text-primary mb-2">500m²</div>
                 <div className="text-sm text-muted-foreground">Estrutura completa</div>
               </div>
-              <div className="text-center lg:text-left">
+              <div className="text-center">
                 <div className="text-4xl font-bold text-primary mb-2">100%</div>
                 <div className="text-sm text-muted-foreground">Qualidade garantida</div>
               </div>
             </div>
-          </div>
-
-          {/* Lado Direito - Vídeo */}
-          <div className="flex items-center justify-center">
-            <video 
-              className="w-full h-auto rounded-lg shadow-elegant" 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-            >
-              <source src="/galeria/video/hero.mp4" type="video/mp4" />
-              Seu navegador não suporta vídeos.
-            </video>
           </div>
         </div>
       </div>
