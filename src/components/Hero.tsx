@@ -23,7 +23,7 @@ const Hero = () => {
           {/* Texto centralizado com fundo preto esmaecido */}
           <div className="text-center animate-fade-in bg-black/60 backdrop-blur-sm rounded-2xl p-8 md:p-12">
             {/* H1 - Nome da empresa */}
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
               Rinoxer
             </h1>
 
