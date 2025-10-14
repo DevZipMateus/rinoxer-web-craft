@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Texto centralizado com fundo preto esmaecido */}
-          <div className="text-center animate-fade-in bg-black/60 backdrop-blur-sm rounded-2xl p-8 md:p-12">
+          <div className="text-center animate-fade-in backdrop-blur-sm rounded-2xl p-8 md:p-12 bg-black/[0.12]">
             {/* H1 - Nome da empresa */}
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
               Rinoxer
