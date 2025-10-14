@@ -14,8 +14,17 @@ const Hero = () => {
     }
   };
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-subtle pt-20">
-      <div className="container mx-auto px-4 py-20">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/hero-background.jpg" 
+          alt="Cozinha Industrial em Aço Inox" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/90"></div>
+      </div>
+      <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Lado Esquerdo - Texto */}
           <div className="text-center lg:text-left animate-fade-in">
