@@ -1,0 +1,110 @@
+import Header from "@/components/Header";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom";
+import areaSaudeImg from "@/assets/area-saude.jpeg";
+
+const AreaSaude = () => {
+  return (
+    <div className="min-h-screen">
+      <Header />
+      <main className="pt-20">
+        {/* Hero Section */}
+        <section className="relative h-[400px] flex items-center justify-center">
+          <div className="absolute inset-0">
+            <img 
+              src={areaSaudeImg} 
+              alt="Área da Saúde" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/50" />
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
+            <Link 
+              to="/" 
+              className="inline-flex items-center gap-2 text-white mb-4 hover:text-primary transition-colors"
+            >
+              <ArrowLeft size={20} />
+              Voltar
+            </Link>
+            <h1 className="text-4xl md:text-6xl font-bold text-white">
+              Área da Saúde
+            </h1>
+            <p className="text-xl text-white mt-4">
+              Soluções em Aço Inox para Ambientes Hospitalares
+            </p>
+          </div>
+        </section>
+
+        {/* Content Section */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6">
+                Equipamentos para Hospitais e Clínicas
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Fabricamos equipamentos em aço inox de alta qualidade para ambientes hospitalares, 
+                clínicas, laboratórios e consultórios, garantindo higiene, durabilidade e conformidade 
+                com as normas sanitárias.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold flex items-center gap-2">
+                    <CheckCircle2 className="text-primary" size={24} />
+                    Produtos Principais
+                  </h3>
+                  <ul className="space-y-2 ml-8">
+                    <li>• Bancadas para Laboratório</li>
+                    <li>• Armários e Estantes</li>
+                    <li>• Carrinhos de Medicação</li>
+                    <li>• Pias e Lavabos Cirúrgicos</li>
+                    <li>• Mesas para Instrumentos</li>
+                    <li>• Prateleiras e Suportes</li>
+                  </ul>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold flex items-center gap-2">
+                    <CheckCircle2 className="text-primary" size={24} />
+                    Diferenciais
+                  </h3>
+                  <ul className="space-y-2 ml-8">
+                    <li>• Aço Inox AISI 304/316</li>
+                    <li>• Fácil Higienização</li>
+                    <li>• Resistente a Corrosão</li>
+                    <li>• Conformidade com ANVISA</li>
+                    <li>• Projetos Personalizados</li>
+                    <li>• Instalação Profissional</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-primary/10 rounded-lg p-8 text-center">
+                <h3 className="text-2xl font-bold mb-4">
+                  Solicite um Orçamento Personalizado
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Entre em contato conosco para desenvolver uma solução sob medida 
+                  para sua instituição de saúde.
+                </p>
+                <a 
+                  href="https://wa.me/5519983134643" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-semibold transition-all duration-300"
+                >
+                  Falar com Especialista
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <WhatsAppButton />
+    </div>
+  );
+};
+
+export default AreaSaude;
