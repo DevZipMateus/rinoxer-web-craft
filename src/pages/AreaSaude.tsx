@@ -9,6 +9,12 @@ import carrinhoMed from "@/assets/saude/carrinho-medicacao.jpg";
 import piaCirurgica from "@/assets/saude/pia-cirurgica.jpg";
 import mesaInstrumentos from "@/assets/saude/mesa-instrumentos.jpg";
 import prateleiras from "@/assets/saude/prateleiras.jpg";
+import lixeiraHospitalar from "@/assets/saude/lixeira-hospitalar.jpg";
+import macaExame from "@/assets/saude/maca-exame.jpg";
+import bandejaEsterilizacao from "@/assets/saude/bandeja-esterilizacao.jpg";
+import cabeceiraLeito from "@/assets/saude/cabeceira-leito.jpg";
+import balcaoFarmacia from "@/assets/saude/balcao-farmacia.jpg";
+import carroUtilitario from "@/assets/saude/carro-utilitario.jpg";
 
 const AreaSaude = () => {
   return (
@@ -183,6 +189,72 @@ const AreaSaude = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
                     <p className="text-white font-semibold text-lg p-4">Prateleiras e Estantes</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={lixeiraHospitalar} 
+                    alt="Lixeira Hospitalar" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Lixeira Hospitalar</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={macaExame} 
+                    alt="Maca para Exame" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Maca para Exame</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={bandejaEsterilizacao} 
+                    alt="Bandeja de Esterilização" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Bandeja de Esterilização</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={cabeceiraLeito} 
+                    alt="Cabeceira de Leito" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Cabeceira de Leito</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={balcaoFarmacia} 
+                    alt="Balcão para Farmácia" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Balcão para Farmácia</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={carroUtilitario} 
+                    alt="Carro Utilitário" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Carro Utilitário</p>
                   </div>
                 </div>
               </div>
