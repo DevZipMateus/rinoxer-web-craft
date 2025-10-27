@@ -3,6 +3,18 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import cozinhaIndustrialImg from "@/assets/cozinha-industrial.jpeg";
+import fogaoIndustrial from "@/assets/cozinha/fogao-industrial.jpg";
+import piaIndustrial from "@/assets/cozinha/pia-industrial.jpg";
+import mesaTrabalho from "@/assets/cozinha/mesa-trabalho.jpg";
+import prateleirasParede from "@/assets/cozinha/prateleiras-parede.jpg";
+import coifaExaustor from "@/assets/cozinha/coifa-exaustor.jpg";
+import armarioInox from "@/assets/cozinha/armario-inox.jpg";
+import carroTransporte from "@/assets/cozinha/carro-transporte.jpg";
+import chapaGrill from "@/assets/cozinha/chapa-grill.jpg";
+import fritadeira from "@/assets/cozinha/fritadeira.jpg";
+import bancadaPreparo from "@/assets/cozinha/bancada-preparo.jpg";
+import estanteInox from "@/assets/cozinha/estante-inox.jpg";
+import passThrough from "@/assets/cozinha/pass-through.jpg";
 
 const CozinhaIndustrial = () => {
   return (
@@ -97,6 +109,154 @@ const CozinhaIndustrial = () => {
                 >
                   Solicitar Orçamento
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Products Gallery Section */}
+        <section className="py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold mb-4 text-center">
+                Nossos Equipamentos para Cozinha Industrial
+              </h2>
+              <p className="text-lg text-muted-foreground mb-12 text-center">
+                Conheça alguns dos equipamentos em aço inox que fabricamos
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={fogaoIndustrial} 
+                    alt="Fogão Industrial" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Fogão Industrial</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={piaIndustrial} 
+                    alt="Pia Industrial" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Pia Industrial</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={mesaTrabalho} 
+                    alt="Mesa de Trabalho" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Mesa de Trabalho</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={prateleirasParede} 
+                    alt="Prateleiras de Parede" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Prateleiras de Parede</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={coifaExaustor} 
+                    alt="Coifa e Exaustor" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Coifa e Exaustor</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={armarioInox} 
+                    alt="Armário em Aço Inox" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Armário em Aço Inox</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={carroTransporte} 
+                    alt="Carro de Transporte" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Carro de Transporte</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={chapaGrill} 
+                    alt="Chapa e Grill" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Chapa e Grill</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={fritadeira} 
+                    alt="Fritadeira Industrial" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Fritadeira Industrial</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={bancadaPreparo} 
+                    alt="Bancada de Preparo" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Bancada de Preparo</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={estanteInox} 
+                    alt="Estante em Aço Inox" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Estante em Aço Inox</p>
+                  </div>
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={passThrough} 
+                    alt="Pass-Through" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4">Pass-Through</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
