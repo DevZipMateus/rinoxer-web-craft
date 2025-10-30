@@ -206,12 +206,12 @@ const AreaSaude = () => {
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={mesaInstrumentos} 
-                    alt="Mesa Mayo" 
+                    src={carroUtilitario} 
+                    alt="Suporte de Soro" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Mesa Mayo</p>
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Suporte de Soro</p>
                   </div>
                 </div>
 
@@ -250,12 +250,12 @@ const AreaSaude = () => {
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={carroUtilitario} 
-                    alt="Carro Utilitário" 
+                    src={armarioInox} 
+                    alt="Estante Médica" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Carro Utilitário</p>
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Estante Médica</p>
                   </div>
                 </div>
               </div>
