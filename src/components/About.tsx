@@ -1,29 +1,7 @@
 import { Building2, TrendingUp, Award, Target } from "lucide-react";
+import fachadaRinoxer from "@/assets/fachada-rinoxer.jpg";
 
 const About = () => {
-  const timeline = [
-    {
-      year: "2015",
-      title: "De um sonho à realização",
-      description: "Iniciamos com revendas, impulsionados por um sonho e o desejo genuíno de fazer a diferença, mergulhando no universo do empreendedorismo."
-    },
-    {
-      year: "Início",
-      title: "Da garagem para o mundo",
-      description: "Começamos a produzir nossos próprios produtos, artesanalmente, com cuidado em cada detalhe. Uma garagem simples, mas cheia de significado."
-    },
-    {
-      year: "Evolução",
-      title: "Crescimento passo a passo",
-      description: "Primeiro salão comercial de 4x4 metros com uma única porta. Depois, um espaço maior com duas portas e mezanino, permitindo organizar melhor os setores."
-    },
-    {
-      year: "Hoje",
-      title: "Estrutura para novos voos",
-      description: "Operamos em 500m² com setores bem definidos: administrativo, comercial, produção e estoque. Eficiência e atendimento profissional."
-    }
-  ];
-
   const values = [
     {
       icon: Target,
@@ -80,28 +58,26 @@ const About = () => {
         </div>
 
         {/* Timeline */}
-        <div className="max-w-5xl mx-auto mb-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {timeline.map((item, index) => (
-              <div 
-                key={index}
-                className="bg-card border border-border rounded-xl p-6 hover:shadow-soft transition-all duration-300 animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-bold">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground">{item.year}</div>
-                    <h3 className="text-xl font-bold text-foreground">{item.title}</h3>
-                  </div>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            ))}
+        <div className="max-w-6xl mx-auto mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Imagem à esquerda */}
+            <div className="flex items-center justify-center">
+              <img 
+                src={fachadaRinoxer} 
+                alt="Fachada Rinoxer" 
+                className="w-full h-auto rounded-lg shadow-elegant"
+              />
+            </div>
+            
+            {/* Texto à direita */}
+            <div className="space-y-6">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Iniciamos em 2015 nossas atividades atuando na época apenas como revendedores, com o propósito de crescer e expandir de forma constante. Com o passar do tempo, abrimos novos horizontes para o setor de indústria, iniciando a produção dos nossos próprios produtos — ampliando cada vez mais o nosso portfólio, trazendo melhores custos e benefícios, com qualidade aos nossos clientes.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Hoje, contamos com uma estrutura sólida e preparada para novos desafios. Operamos em um espaço de 500 m², com setores bem definidos — administrativo, comercial, produção e estoque — garantindo eficiência, organização e um atendimento profissional de excelência.
+              </p>
+            </div>
           </div>
         </div>
 
