@@ -12,7 +12,7 @@ import armarioInox from "@/assets/cozinha/armario-inox.jpg";
 import carroTransporte from "@/assets/cozinha/carro-transporte.jpg";
 import chapaGrill from "@/assets/cozinha/chapa-grill.jpg";
 import fritadeira from "@/assets/cozinha/fritadeira.jpg";
-import bancadaPreparo from "@/assets/cozinha/bancada-preparo.jpg";
+import balcaoRefrigerado from "@/assets/cozinha/balcao-refrigerado.jpg";
 import estanteInox from "@/assets/cozinha/estante-inox.jpg";
 import passThrough from "@/assets/cozinha/pass-through.jpg";
 
@@ -227,12 +227,12 @@ const CozinhaIndustrial = () => {
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={bancadaPreparo} 
-                    alt="Bancada de Preparo" 
+                    src={balcaoRefrigerado} 
+                    alt="Balcão Refrigerado" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Bancada de Preparo</p>
+                    <p className="text-white font-semibold text-lg p-4">Balcão Refrigerado</p>
                   </div>
                 </div>
 
