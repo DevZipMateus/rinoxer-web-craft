@@ -136,10 +136,10 @@ const Testimonials = () => {
                             />
                           ))}
                         </div>
-                        <p className="text-foreground mb-4 flex-1 text-sm line-clamp-6">
+                        <p className="text-foreground mb-4 flex-1 text-sm line-clamp-6 font-playfair italic">
                           "{testimonial.text}"
                         </p>
-                        <p className="text-primary font-semibold mt-auto">
+                        <p className="text-primary font-semibold mt-auto font-playfair">
                           {testimonial.name}
                         </p>
                       </CardContent>

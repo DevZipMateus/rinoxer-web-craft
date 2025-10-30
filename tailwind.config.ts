@@ -60,6 +60,9 @@ export default {
       transitionProperty: {
         'smooth': 'var(--transition-smooth)',
       },
+      fontFamily: {
+        'playfair': ['Playfair Display', 'serif'],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
