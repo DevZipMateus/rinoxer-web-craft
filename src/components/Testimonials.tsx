@@ -151,6 +151,17 @@ const Testimonials = () => {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
+          
+          <div className="text-center mt-8">
+            <a 
+              href="https://www.google.com/search?q=rinoxer&oq=rinoxer&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyDAgCEC4YChixAxiABDIMCAMQLhgKGLEDGIAEMg8IBBAuGAoYgwEYsQMYgAQyBggFEEUYPDIGCAYQRRg9MgYIBxBFGDzSAQgyMDQ3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x94c8bbc9b734ab8f:0x1eea48fcbc2d4bb8,1,,,,"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-accent font-playfair text-lg underline transition-colors"
+            >
+              Para ver mais avaliações, clique aqui
+            </a>
+          </div>
         </div>
       </div>
     </section>
