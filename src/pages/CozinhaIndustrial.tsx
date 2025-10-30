@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -274,6 +275,7 @@ const CozinhaIndustrial = () => {
           </div>
         </section>
       </main>
+      <Footer />
       <WhatsAppButton />
     </div>
   );
