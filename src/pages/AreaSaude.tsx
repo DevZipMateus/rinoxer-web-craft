@@ -23,7 +23,7 @@ const AreaSaude = () => {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="relative h-[400px] flex items-center justify-center">
+        <section className="relative h-[300px] flex items-center justify-center">
           <div className="absolute inset-0">
             <img 
               src={areaSaudeImg} 
