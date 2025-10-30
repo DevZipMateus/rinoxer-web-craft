@@ -163,12 +163,12 @@ const CozinhaIndustrial = () => {
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={prateleirasParede} 
-                    alt="Prateleiras de Parede" 
+                    src={armarioInox} 
+                    alt="Armário em Aço Inox" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Prateleiras de Parede</p>
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Armário em Aço Inox</p>
                   </div>
                 </div>
 
@@ -240,12 +240,12 @@ const CozinhaIndustrial = () => {
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={estanteInox} 
-                    alt="Estante em Aço Inox" 
+                    src={passThrough} 
+                    alt="Pass-Through" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Estante em Aço Inox</p>
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Pass-Through</p>
                   </div>
                 </div>
 
