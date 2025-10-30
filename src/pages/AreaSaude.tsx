@@ -133,8 +133,8 @@ const AreaSaude = () => {
                     alt="Bancada para Laboratório" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Bancada para Laboratório</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Bancada para Laboratório</p>
                   </div>
                 </div>
 
@@ -144,8 +144,8 @@ const AreaSaude = () => {
                     alt="Armário em Aço Inox" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Armário em Aço Inox</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Armário em Aço Inox</p>
                   </div>
                 </div>
 
@@ -155,8 +155,8 @@ const AreaSaude = () => {
                     alt="Carrinho de Medicação" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Carrinho de Medicação</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Carrinho de Medicação</p>
                   </div>
                 </div>
 
@@ -166,8 +166,8 @@ const AreaSaude = () => {
                     alt="Pia Cirúrgica" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Pia Cirúrgica</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Pia Cirúrgica</p>
                   </div>
                 </div>
 
@@ -177,8 +177,8 @@ const AreaSaude = () => {
                     alt="Mesa para Instrumentos" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Mesa para Instrumentos</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Mesa para Instrumentos</p>
                   </div>
                 </div>
 
@@ -188,8 +188,8 @@ const AreaSaude = () => {
                     alt="Prateleiras e Estantes" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Prateleiras e Estantes</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Prateleiras e Estantes</p>
                   </div>
                 </div>
 
@@ -199,19 +199,19 @@ const AreaSaude = () => {
                     alt="Lixeira Hospitalar" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Lixeira Hospitalar</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Lixeira Hospitalar</p>
                   </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={macaExame} 
-                    alt="Maca para Exame" 
+                    src={mesaInstrumentos} 
+                    alt="Mesa Mayo" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Maca para Exame</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Mesa Mayo</p>
                   </div>
                 </div>
 
@@ -221,8 +221,8 @@ const AreaSaude = () => {
                     alt="Bandeja de Esterilização" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Bandeja de Esterilização</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Bandeja de Esterilização</p>
                   </div>
                 </div>
 
@@ -232,8 +232,8 @@ const AreaSaude = () => {
                     alt="Cabeceira de Leito" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Cabeceira de Leito</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Cabeceira de Leito</p>
                   </div>
                 </div>
 
@@ -243,8 +243,8 @@ const AreaSaude = () => {
                     alt="Balcão para Farmácia" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Balcão para Farmácia</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Balcão para Farmácia</p>
                   </div>
                 </div>
 
@@ -254,8 +254,8 @@ const AreaSaude = () => {
                     alt="Carro Utilitário" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4">Carro Utilitário</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Carro Utilitário</p>
                   </div>
                 </div>
               </div>
