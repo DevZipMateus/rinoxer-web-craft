@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Star, ExternalLink } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import {
   Carousel,
@@ -9,6 +9,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const Testimonials = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -153,14 +154,20 @@ const Testimonials = () => {
           </Carousel>
           
           <div className="text-center mt-8">
-            <a 
-              href="https://www.google.com/search?q=rinoxer&oq=rinoxer&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyDAgCEC4YChixAxiABDIMCAMQLhgKGLEDGIAEMg8IBBAuGAoYgwEYsQMYgAQyBggFEEUYPDIGCAYQRRg9MgYIBxBFGDzSAQgyMDQ3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x94c8bbc9b734ab8f:0x1eea48fcbc2d4bb8,1,,,,"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:text-accent font-playfair text-lg underline transition-colors"
+            <Button
+              asChild
+              size="lg"
+              className="font-playfair text-lg shadow-elegant hover:shadow-soft transition-all duration-300"
             >
-              Para ver mais avaliações, clique aqui
-            </a>
+              <a 
+                href="https://www.google.com/search?q=rinoxer&oq=rinoxer&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyDAgCEC4YChixAxiABDIMCAMQLhgKGLEDGIAEMg8IBBAuGAoYgwEYsQMYgAQyBggFEEUYPDIGCAYQRRg9MgYIBxBFGDzSAQgyMDQ3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x94c8bbc9b734ab8f:0x1eea48fcbc2d4bb8,1,,,,"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver mais avaliações
+                <ExternalLink className="ml-2 w-5 h-5" />
+              </a>
+            </Button>
           </div>
         </div>
       </div>
