@@ -86,7 +86,7 @@ const AreaSaude = () => {
                     <li>• Aço Inox AISI 304/316</li>
                     <li>• Fácil Higienização</li>
                     <li>• Resistente a Corrosão</li>
-                    <li>• Conformidade com ANVISA</li>
+                    <li>• Materia prima</li>
                     <li>• Projetos Personalizados</li>
                     <li>• Instalação Profissional</li>
                   </ul>
