@@ -14,12 +14,8 @@ const Gallery = () => {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Lista de mídias (imagens e vídeos)
+  // Lista de vídeos
   const mediaItems = [
-    { type: "image", src: "/galeria/midia_5.jpg", alt: "Produto Rinoxer 1" },
-    { type: "image", src: "/galeria/midia_6.jpg", alt: "Produto Rinoxer 2" },
-    { type: "image", src: "/galeria/midia_7.jpg", alt: "Produto Rinoxer 3" },
-    { type: "image", src: "/galeria/midia_8.jpg", alt: "Produto Rinoxer 4" },
     { type: "video", src: "/galeria/video/1.mp4" },
     { type: "video", src: "/galeria/video/2.mp4" },
     { type: "video", src: "/galeria/video/3.mp4" },
@@ -53,18 +49,11 @@ const Gallery = () => {
       const selectedIndex = api.selectedScrollSnap();
       setCurrent(selectedIndex);
 
-      const currentMedia = mediaItems[selectedIndex];
-      
-      if (currentMedia.type === "image") {
-        startImageInterval();
-      } else {
-        stopInterval();
-        // Reproduzir o vídeo atual
-        const video = videoRefs.current[selectedIndex];
-        if (video) {
-          video.currentTime = 0;
-          video.play();
-        }
+      // Reproduzir o vídeo atual
+      const video = videoRefs.current[selectedIndex];
+      if (video) {
+        video.currentTime = 0;
+        video.play();
       }
     };
 
@@ -106,26 +95,18 @@ const Gallery = () => {
                 <CarouselItem key={index}>
                   <div className="p-1">
                     <div className="relative aspect-video bg-muted rounded-lg overflow-hidden shadow-elegant">
-                      {item.type === "image" ? (
-                        <img
-                          src={item.src}
-                          alt={item.alt}
-                          className="w-full h-full object-cover"
-                        />
-                      ) : (
-                        <video
-                          ref={(el) => (videoRefs.current[index] = el)}
-                          className="w-full h-full object-cover"
-                          muted
-                          playsInline
-                          onEnded={handleVideoEnded}
-                          controlsList="nodownload nofullscreen noremoteplayback"
-                          disablePictureInPicture
-                        >
-                          <source src={item.src} type="video/mp4" />
-                          Seu navegador não suporta vídeos.
-                        </video>
-                      )}
+                      <video
+                        ref={(el) => (videoRefs.current[index] = el)}
+                        className="w-full h-full object-cover"
+                        muted
+                        playsInline
+                        onEnded={handleVideoEnded}
+                        controlsList="nodownload nofullscreen noremoteplayback"
+                        disablePictureInPicture
+                      >
+                        <source src={item.src} type="video/mp4" />
+                        Seu navegador não suporta vídeos.
+                      </video>
                     </div>
                   </div>
                 </CarouselItem>
