@@ -9,11 +9,11 @@ const SectorsHero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Área da Saúde */}
           <div className="relative group overflow-hidden rounded-lg shadow-lg">
-            <div className="aspect-[4/3] relative">
+            <div className="aspect-video relative">
               <img 
                 src={areaSaudeImg} 
                 alt="Área da Saúde - Equipamentos em Aço Inox" 
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
               />
             </div>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
@@ -31,11 +31,11 @@ const SectorsHero = () => {
 
           {/* Cozinha Industrial */}
           <div className="relative group overflow-hidden rounded-lg shadow-lg">
-          <div className="aspect-[4/3] relative">
+          <div className="aspect-video relative">
             <img 
               src={cozinhaIndustrialImg} 
               alt="Cozinha Industrial - Equipamentos em Aço Inox" 
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
             />
           </div>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
