@@ -185,18 +185,18 @@ const CozinhaIndustrial = () => {
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={armarioInox} 
-                    alt="Armário em Aço Inox" 
+                    src={bancadaPreparo} 
+                    alt="Bancada Auxiliar" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Armário em Aço Inox</p>
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Bancada Auxiliar</p>
                   </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={carroTransporte} 
+                    src={carroTransporte}
                     alt="Carro de Transporte" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -251,18 +251,18 @@ const CozinhaIndustrial = () => {
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={passThrough} 
-                    alt="Pass-Through" 
+                    src={mesaTrabalho} 
+                    alt="Bancada de Trabalho" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Pass-Through</p>
+                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Bancada de Trabalho</p>
                   </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={balcaoRefrigerado} 
+                    src={balcaoRefrigerado}
                     alt="Balcão Refrigerado" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
