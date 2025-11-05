@@ -58,7 +58,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-exo;
   }
 
   h1, h2, h3, h4, h5, h6 {
