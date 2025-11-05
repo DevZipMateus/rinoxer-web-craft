@@ -134,9 +134,6 @@ const AreaSaude = () => {
                     alt="Bancada para Laboratório" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Bancada para Laboratório</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -145,9 +142,6 @@ const AreaSaude = () => {
                     alt="Armário em Aço Inox" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Armário em Aço Inox</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -156,9 +150,6 @@ const AreaSaude = () => {
                     alt="Carrinho de Medicação" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Carrinho de Medicação</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -167,9 +158,6 @@ const AreaSaude = () => {
                     alt="Pia Cirúrgica" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Pia Cirúrgica</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -178,9 +166,6 @@ const AreaSaude = () => {
                     alt="Mesa para Instrumentos" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Mesa para Instrumentos</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -189,9 +174,6 @@ const AreaSaude = () => {
                     alt="Armário em Aço Inox" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Armário em Aço Inox</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -200,9 +182,6 @@ const AreaSaude = () => {
                     alt="Lixeira Hospitalar" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Lixeira Hospitalar</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -211,9 +190,6 @@ const AreaSaude = () => {
                     alt="Suporte de Soro" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Suporte de Soro</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -222,9 +198,6 @@ const AreaSaude = () => {
                     alt="Bandeja de Esterilização" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Bandeja de Esterilização</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -233,9 +206,6 @@ const AreaSaude = () => {
                     alt="Cabeceira de Leito" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Cabeceira de Leito</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -244,9 +214,6 @@ const AreaSaude = () => {
                     alt="Balcão para Farmácia" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Balcão para Farmácia</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -255,9 +222,6 @@ const AreaSaude = () => {
                     alt="Balcão para Farmácia" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Balcão para Farmácia</p>
-                  </div>
                 </div>
               </div>
             </div>
