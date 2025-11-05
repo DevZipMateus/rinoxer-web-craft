@@ -4,19 +4,16 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import cozinhaIndustrialImg from "@/assets/cozinha-industrial.jpeg";
-import fogaoIndustrial from "@/assets/cozinha/fogao-industrial.jpg";
-import piaIndustrial from "@/assets/cozinha/pia-industrial.jpg";
-import mesaTrabalho from "@/assets/cozinha/mesa-trabalho.jpg";
-import prateleirasParede from "@/assets/cozinha/prateleiras-parede.jpg";
-import coifaExaustor from "@/assets/cozinha/coifa-exaustor.jpg";
-import armarioInox from "@/assets/cozinha/armario-inox.jpg";
-import carroTransporte from "@/assets/cozinha/carro-transporte.jpg";
-import chapaGrill from "@/assets/cozinha/chapa-grill.jpg";
-import fritadeira from "@/assets/cozinha/fritadeira.jpg";
-import bancadaPreparo from "@/assets/cozinha/bancada-preparo.jpg";
-import balcaoRefrigerado from "@/assets/cozinha/balcao-refrigerado.jpg";
-import estanteInox from "@/assets/cozinha/estante-inox.jpg";
-import passThrough from "@/assets/cozinha/pass-through.jpg";
+import cozinhaCompleta1 from "@/assets/cozinha/cozinha-completa-1.jpg";
+import mesaTrabalhoEstrutura from "@/assets/cozinha/mesa-trabalho-estrutura.jpg";
+import bancadaPias from "@/assets/cozinha/bancada-pias.jpg";
+import cozinhaCompleta2 from "@/assets/cozinha/cozinha-completa-2.jpg";
+import equipamentoCocao from "@/assets/cozinha/equipamento-cocao.jpg";
+import coifaMesas1 from "@/assets/cozinha/coifa-mesas-1.jpg";
+import coifaBancada from "@/assets/cozinha/coifa-bancada.jpg";
+import coifaMesas2 from "@/assets/cozinha/coifa-mesas-2.jpg";
+import coifaIndustrial from "@/assets/cozinha/coifa-industrial.jpg";
+import piaCirurgicaLonga from "@/assets/cozinha/pia-cirurgica-longa.jpg";
 
 const CozinhaIndustrial = () => {
   return (
@@ -130,104 +127,80 @@ const CozinhaIndustrial = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={fogaoIndustrial} 
-                    alt="Fogão Industrial" 
+                    src={cozinhaCompleta1} 
+                    alt="Cozinha Industrial Completa" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={piaIndustrial} 
-                    alt="Pia Industrial" 
+                    src={mesaTrabalhoEstrutura} 
+                    alt="Mesa de Trabalho em Estrutura" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={mesaTrabalho} 
-                    alt="Mesa de Trabalho" 
+                    src={bancadaPias} 
+                    alt="Bancada com Pias" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={armarioInox} 
-                    alt="Armário em Aço Inox" 
+                    src={cozinhaCompleta2} 
+                    alt="Cozinha Industrial Completa" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={coifaExaustor} 
-                    alt="Coifa e Exaustor" 
+                    src={equipamentoCocao} 
+                    alt="Equipamento de Cocção" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={bancadaPreparo} 
-                    alt="Bancada Auxiliar" 
+                    src={coifaMesas1} 
+                    alt="Coifa e Mesas de Trabalho" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={carroTransporte}
-                    alt="Carro de Transporte" 
+                    src={coifaBancada}
+                    alt="Coifa e Bancada Industrial" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={chapaGrill} 
-                    alt="Chapa e Grill" 
+                    src={coifaMesas2} 
+                    alt="Coifa e Mesas de Trabalho" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={fritadeira} 
-                    alt="Fritadeira Industrial" 
+                    src={coifaIndustrial} 
+                    alt="Coifa Industrial" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={bancadaPreparo} 
-                    alt="Bancada de Preparo" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={passThrough} 
-                    alt="Pass-Through" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={mesaTrabalho} 
-                    alt="Bancada de Trabalho" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={balcaoRefrigerado}
-                    alt="Balcão Refrigerado" 
+                    src={piaCirurgicaLonga} 
+                    alt="Pia Cirúrgica Longa" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
