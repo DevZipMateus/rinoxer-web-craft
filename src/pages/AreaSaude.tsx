@@ -15,6 +15,7 @@ import macaExame from "@/assets/saude/maca-exame.jpg";
 import bandejaEsterilizacao from "@/assets/saude/bandeja-esterilizacao.jpg";
 import cabeceiraLeito from "@/assets/saude/cabeceira-leito.jpg";
 import balcaoFarmacia from "@/assets/saude/balcao-farmacia.jpg";
+import balcaoFarmacia2 from "@/assets/saude/balcao-farmacia-2.jpg";
 import carroUtilitario from "@/assets/saude/carro-utilitario.jpg";
 
 const AreaSaude = () => {
@@ -250,7 +251,7 @@ const AreaSaude = () => {
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={balcaoFarmacia} 
+                    src={balcaoFarmacia2} 
                     alt="Balcão para Farmácia" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
