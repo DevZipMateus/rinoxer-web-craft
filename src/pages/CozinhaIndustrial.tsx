@@ -134,9 +134,6 @@ const CozinhaIndustrial = () => {
                     alt="Fogão Industrial" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Fogão Industrial</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -145,9 +142,6 @@ const CozinhaIndustrial = () => {
                     alt="Pia Industrial" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Pia Industrial</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -156,9 +150,6 @@ const CozinhaIndustrial = () => {
                     alt="Mesa de Trabalho" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Mesa de Trabalho</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -167,9 +158,6 @@ const CozinhaIndustrial = () => {
                     alt="Armário em Aço Inox" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Armário em Aço Inox</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -178,9 +166,6 @@ const CozinhaIndustrial = () => {
                     alt="Coifa e Exaustor" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Coifa e Exaustor</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -189,9 +174,6 @@ const CozinhaIndustrial = () => {
                     alt="Bancada Auxiliar" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Bancada Auxiliar</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -200,9 +182,6 @@ const CozinhaIndustrial = () => {
                     alt="Carro de Transporte" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Carro de Transporte</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -211,9 +190,6 @@ const CozinhaIndustrial = () => {
                     alt="Chapa e Grill" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Chapa e Grill</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -222,9 +198,6 @@ const CozinhaIndustrial = () => {
                     alt="Fritadeira Industrial" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Fritadeira Industrial</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -233,9 +206,6 @@ const CozinhaIndustrial = () => {
                     alt="Bancada de Preparo" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Bancada de Preparo</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -244,9 +214,6 @@ const CozinhaIndustrial = () => {
                     alt="Pass-Through" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Pass-Through</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -255,9 +222,6 @@ const CozinhaIndustrial = () => {
                     alt="Bancada de Trabalho" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Bancada de Trabalho</p>
-                  </div>
                 </div>
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -266,9 +230,6 @@ const CozinhaIndustrial = () => {
                     alt="Balcão Refrigerado" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end">
-                    <p className="text-white font-semibold text-lg p-4 drop-shadow-lg">Balcão Refrigerado</p>
-                  </div>
                 </div>
               </div>
             </div>
