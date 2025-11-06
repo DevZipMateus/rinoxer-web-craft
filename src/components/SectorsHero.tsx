@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import areaSaudeImg from "@/assets/area-saude.jpeg";
-import cozinhaIndustrialImg from "@/assets/cozinha-industrial.jpeg";
+import cozinhaIndustrialImg from "@/assets/cozinha-industrial-bg.jpg";
 
 const SectorsHero = () => {
   return (
