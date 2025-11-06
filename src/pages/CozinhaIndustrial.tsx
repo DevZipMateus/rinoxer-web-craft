@@ -14,6 +14,7 @@ import coifaBancada from "@/assets/cozinha/coifa-bancada.jpg";
 import coifaMesas2 from "@/assets/cozinha/coifa-mesas-2.jpg";
 import coifaIndustrial from "@/assets/cozinha/coifa-industrial.jpg";
 import piaCirurgicaLonga from "@/assets/cozinha/pia-cirurgica-longa.jpg";
+import bancadaCompleta from "@/assets/cozinha/bancada-completa.jpg";
 
 const CozinhaIndustrial = () => {
   return (
@@ -201,6 +202,14 @@ const CozinhaIndustrial = () => {
                   <img 
                     src={piaCirurgicaLonga} 
                     alt="Pia Cirúrgica Longa" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={bancadaCompleta} 
+                    alt="Bancada Completa com Pias" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
