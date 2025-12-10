@@ -10,6 +10,7 @@ import carrinhoMed from "@/assets/saude/carrinho-medicacao.jpg";
 import piaCirurgica from "@/assets/saude/pia-cirurgica.jpg";
 import mesaInstrumentos from "@/assets/saude/mesa-instrumentos.jpg";
 import prateleiras from "@/assets/saude/prateleiras.jpg";
+import bancadaSaude from "@/assets/saude/bancada-saude.jpg";
 import lixeiraHospitalar from "@/assets/saude/lixeira-hospitalar.jpg";
 import macaExame from "@/assets/saude/maca-exame.jpg";
 import bandejaEsterilizacao from "@/assets/saude/bandeja-esterilizacao.jpg";
@@ -170,8 +171,8 @@ const AreaSaude = () => {
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={armarioInox} 
-                    alt="Armário em Aço Inox" 
+                    src={bancadaSaude} 
+                    alt="Bancada em Aço Inox" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
