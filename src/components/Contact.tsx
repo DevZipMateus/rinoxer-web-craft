@@ -30,35 +30,35 @@ const Contact = () => {
     name: "Instagram",
     url: "https://www.instagram.com/rinoxer?utm_source=qr&igsh=MWlxM3psajRlNGx2Zg=="
   }];
-  return <section id="contact" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4">
+  return <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-gradient-subtle">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Entre em contato
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground">
             Estamos prontos para atender você e transformar suas ideias em realidade
           </p>
         </div>
 
         {/* Contact Grid */}
-        <div className="max-w-5xl mx-auto mb-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {contactInfo.map((info, index) => <div key={index} className="bg-background border border-border rounded-xl p-6 hover:shadow-soft transition-all duration-300 animate-fade-in" style={{
+        <div className="max-w-5xl mx-auto mb-8 sm:mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            {contactInfo.map((info, index) => <div key={index} className="bg-background border border-border rounded-xl p-4 sm:p-6 hover:shadow-soft transition-all duration-300 animate-fade-in" style={{
             animationDelay: `${index * 100}ms`
           }}>
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <info.icon className="text-primary" size={24} />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <info.icon className="text-primary" size={20} />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-bold text-foreground mb-2">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-base sm:text-lg font-bold text-foreground mb-1 sm:mb-2">
                       {info.title}
                     </h3>
-                    {info.link ? <a href={info.link} target={info.link.startsWith('http') ? '_blank' : undefined} rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined} className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                    {info.link ? <a href={info.link} target={info.link.startsWith('http') ? '_blank' : undefined} rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined} className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors duration-300 break-words">
                         {info.value}
-                      </a> : <p className="text-muted-foreground">
+                      </a> : <p className="text-sm sm:text-base text-muted-foreground break-words">
                         {info.value}
                       </p>}
                   </div>
@@ -68,31 +68,31 @@ const Contact = () => {
         </div>
 
         {/* Social Media */}
-        <div className="max-w-5xl mx-auto mb-12">
-          <h3 className="text-2xl font-bold text-center text-foreground mb-8">
+        <div className="max-w-5xl mx-auto mb-8 sm:mb-12">
+          <h3 className="text-xl sm:text-2xl font-bold text-center text-foreground mb-6 sm:mb-8">
             Redes sociais
           </h3>
-          <div className="flex justify-center gap-4">
-            {socialLinks.map((social, index) => <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-full bg-primary hover:bg-primary-dark text-primary-foreground flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-elegant" aria-label={social.name}>
-                <social.icon size={24} />
+          <div className="flex justify-center gap-3 sm:gap-4">
+            {socialLinks.map((social, index) => <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary hover:bg-primary-dark text-primary-foreground flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-elegant" aria-label={social.name}>
+                <social.icon size={20} />
               </a>)}
           </div>
         </div>
 
         {/* CTA Card */}
         <div className="max-w-3xl mx-auto">
-          <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-center animate-fade-in">
-            <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
+          <div className="bg-gradient-primary rounded-2xl p-6 sm:p-8 md:p-12 text-center animate-fade-in">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-foreground mb-3 sm:mb-4">
               Pronto para começar seu projeto?
             </h3>
-            <p className="text-primary-foreground/90 mb-8">
+            <p className="text-sm sm:text-base text-primary-foreground/90 mb-6 sm:mb-8">
               Solicite um orçamento sem compromisso e descubra como podemos ajudar
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://wa.me/5519983134643" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-background hover:bg-secondary text-primary font-semibold rounded-lg transition-all duration-300 hover:shadow-elegant">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+              <a href="https://wa.me/5519983134643" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-background hover:bg-secondary text-primary font-semibold rounded-lg transition-all duration-300 hover:shadow-elegant text-sm sm:text-base">
                 Falar no WhatsApp
               </a>
-              <a href="mailto:vendas@rinoxer.com.br" className="w-full sm:w-auto px-8 py-4 bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground border-2 border-primary-foreground/30 font-semibold rounded-lg transition-all duration-300">
+              <a href="mailto:vendas@rinoxer.com.br" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground border-2 border-primary-foreground/30 font-semibold rounded-lg transition-all duration-300 text-sm sm:text-base">
                 Enviar Email
               </a>
             </div>
@@ -100,7 +100,7 @@ const Contact = () => {
         </div>
 
         {/* Company Info */}
-        <div className="max-w-3xl mx-auto mt-12 text-center">
+        <div className="max-w-3xl mx-auto mt-8 sm:mt-12 text-center">
           
         </div>
       </div>

@@ -26,17 +26,17 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header with Video */}
-        <div className="max-w-6xl mx-auto mb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto mb-10 sm:mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Texto à esquerda */}
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
                 Nossa jornada
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-muted-foreground">
                 Uma história de resiliência, evolução e comprometimento com a qualidade
               </p>
             </div>
@@ -58,10 +58,10 @@ const About = () => {
         </div>
 
         {/* Timeline */}
-        <div className="max-w-6xl mx-auto mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto mb-12 sm:mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Imagem à esquerda */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center order-2 lg:order-1">
               <img 
                 src={fachadaRinoxer} 
                 alt="Fachada Rinoxer" 
@@ -70,11 +70,11 @@ const About = () => {
             </div>
             
             {/* Texto à direita */}
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
+            <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 Iniciamos em 2015 nossas atividades atuando na época apenas como revendedores, com o propósito de crescer e expandir de forma constante. Com o passar do tempo, abrimos novos horizontes para o setor de indústria, iniciando a produção dos nossos próprios produtos — ampliando cada vez mais o nosso portfólio, trazendo melhores custos e benefícios, com qualidade aos nossos clientes.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 Hoje, contamos com uma estrutura sólida e preparada para novos desafios. Operamos em um espaço de 500 m², com setores bem definidos — administrativo, comercial, produção e estoque — garantindo eficiência, organização e um atendimento profissional de excelência.
               </p>
             </div>
@@ -83,23 +83,23 @@ const About = () => {
 
         {/* Values Grid */}
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-center text-foreground mb-12">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-8 sm:mb-12">
             Nossos valores
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {values.map((value, index) => (
               <div 
                 key={index}
-                className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-elegant hover:scale-105 transition-all duration-300 animate-fade-in"
+                className="bg-card border border-border rounded-xl p-4 sm:p-6 text-center hover:shadow-elegant hover:scale-105 transition-all duration-300 animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                  <value.icon className="text-primary" size={32} />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+                  <value.icon className="text-primary" size={24} />
                 </div>
-                <h4 className="text-xl font-bold text-foreground mb-2">
+                <h4 className="text-lg sm:text-xl font-bold text-foreground mb-1 sm:mb-2">
                   {value.title}
                 </h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                   {value.description}
                 </p>
               </div>
@@ -108,16 +108,16 @@ const About = () => {
         </div>
 
         {/* Closing Statement */}
-        <div className="max-w-3xl mx-auto mt-16 text-center">
-          <blockquote className="text-xl md:text-2xl font-semibold text-primary italic">
+        <div className="max-w-3xl mx-auto mt-12 sm:mt-16 text-center px-4">
+          <blockquote className="text-lg sm:text-xl md:text-2xl font-semibold text-primary italic">
             "Cada espaço foi um capítulo. Cada mudança, uma conquista."
           </blockquote>
-          <p className="mt-6 text-muted-foreground">
+          <p className="mt-4 sm:mt-6 text-sm sm:text-base text-muted-foreground">
             Nossa história é feita de resiliência, evolução e comprometimento com a qualidade. 
             Crescemos com responsabilidade, sempre guiados pelo respeito aos nossos clientes, 
             colaboradores e parceiros.
           </p>
-          <p className="mt-4 text-lg font-semibold text-foreground">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg font-semibold text-foreground">
             E sabemos: essa jornada está só começando.
           </p>
         </div>
