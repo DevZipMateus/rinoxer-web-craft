@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ImageLightbox from "@/components/ImageLightbox";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import areaSaudeImg from "@/assets/area-saude.jpeg";
@@ -9,7 +10,6 @@ import armarioInox from "@/assets/saude/armario-inox.jpg";
 import carrinhoMed from "@/assets/saude/carrinho-medicacao.jpg";
 import piaCirurgica from "@/assets/saude/pia-cirurgica.jpg";
 import mesaInstrumentos from "@/assets/saude/mesa-instrumentos.jpg";
-import prateleiras from "@/assets/saude/prateleiras.jpg";
 import bancadaSaude from "@/assets/saude/bancada-saude.jpg";
 import lixeiraHospitalar from "@/assets/saude/lixeira-hospitalar.jpg";
 import macaExame from "@/assets/saude/maca-exame.jpg";
@@ -18,6 +18,21 @@ import cabeceiraLeito from "@/assets/saude/cabeceira-leito.jpg";
 import balcaoFarmacia from "@/assets/saude/balcao-farmacia.jpg";
 import balcaoFarmacia2 from "@/assets/saude/balcao-farmacia-2.jpg";
 import carroUtilitario from "@/assets/saude/carro-utilitario.jpg";
+
+const galleryImages = [
+  { src: bancadaLab, alt: "Bancada para Laboratório" },
+  { src: armarioInox, alt: "Armário em Aço Inox" },
+  { src: carrinhoMed, alt: "Carrinho de Medicação" },
+  { src: piaCirurgica, alt: "Pia Cirúrgica" },
+  { src: mesaInstrumentos, alt: "Mesa para Instrumentos" },
+  { src: bancadaSaude, alt: "Bancada em Aço Inox" },
+  { src: lixeiraHospitalar, alt: "Lixeira Hospitalar" },
+  { src: carroUtilitario, alt: "Carro Utilitário" },
+  { src: bandejaEsterilizacao, alt: "Bandeja de Esterilização" },
+  { src: cabeceiraLeito, alt: "Cabeceira de Leito" },
+  { src: balcaoFarmacia, alt: "Balcão para Farmácia" },
+  { src: balcaoFarmacia2, alt: "Balcão para Farmácia" },
+];
 
 const AreaSaude = () => {
   return (
@@ -128,103 +143,7 @@ const AreaSaude = () => {
                 Conheça alguns dos equipamentos em aço inox que fabricamos
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={bancadaLab} 
-                    alt="Bancada para Laboratório" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={armarioInox} 
-                    alt="Armário em Aço Inox" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={carrinhoMed} 
-                    alt="Carrinho de Medicação" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={piaCirurgica} 
-                    alt="Pia Cirúrgica" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={mesaInstrumentos} 
-                    alt="Mesa para Instrumentos" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={bancadaSaude} 
-                    alt="Bancada em Aço Inox" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={lixeiraHospitalar} 
-                    alt="Lixeira Hospitalar" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={carroUtilitario} 
-                    alt="Suporte de Soro" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={bandejaEsterilizacao} 
-                    alt="Bandeja de Esterilização" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={cabeceiraLeito} 
-                    alt="Cabeceira de Leito" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={balcaoFarmacia} 
-                    alt="Balcão para Farmácia" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={balcaoFarmacia2} 
-                    alt="Balcão para Farmácia" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </div>
+              <ImageLightbox images={galleryImages} />
             </div>
           </div>
         </section>

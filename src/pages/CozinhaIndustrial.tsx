@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ImageLightbox from "@/components/ImageLightbox";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import cozinhaIndustrialImg from "@/assets/cozinha-industrial.jpeg";
@@ -27,6 +28,32 @@ import coifaSuspensa from "@/assets/cozinha/coifa-suspensa.jpg";
 import coifaParede from "@/assets/cozinha/coifa-parede.jpg";
 import coifaFiltros from "@/assets/cozinha/coifa-filtros.jpg";
 import dutoExaustao from "@/assets/cozinha/duto-exaustao.jpg";
+
+const galleryImages = [
+  { src: cozinhaCompleta1, alt: "Cozinha Industrial Completa" },
+  { src: mesaTrabalhoEstrutura, alt: "Mesa de Trabalho em Estrutura" },
+  { src: bancadaPias, alt: "Bancada com Pias" },
+  { src: cozinhaCompleta2, alt: "Cozinha Industrial Completa" },
+  { src: equipamentoCocao, alt: "Equipamento de Cocção" },
+  { src: coifaBancada, alt: "Coifa e Bancada Industrial" },
+  { src: coifaMesas2, alt: "Coifa e Mesas de Trabalho" },
+  { src: piaCirurgicaLonga, alt: "Pia Cirúrgica Longa" },
+  { src: bancadaCompleta, alt: "Bancada Completa com Pias" },
+  { src: cozinhaFogaoCoifa, alt: "Cozinha com Fogão e Coifa" },
+  { src: balcaoInox, alt: "Balcão em Aço Inox" },
+  { src: bancadaLPias, alt: "Bancada em L com Pias" },
+  { src: estanteServico, alt: "Estante de Serviço" },
+  { src: buffetBanhoMaria, alt: "Buffet Banho Maria" },
+  { src: balcaoPortas, alt: "Balcão com Portas" },
+  { src: mesaPrateleiras, alt: "Mesa com Prateleiras" },
+  { src: balcaoRefrigeradoPia, alt: "Balcão Refrigerado com Pia" },
+  { src: gabinetePia, alt: "Gabinete com Pia" },
+  { src: coifaGrande, alt: "Coifa Industrial Grande" },
+  { src: coifaSuspensa, alt: "Coifa Suspensa" },
+  { src: coifaParede, alt: "Coifa de Parede" },
+  { src: coifaFiltros, alt: "Coifa com Filtros" },
+  { src: dutoExaustao, alt: "Duto de Exaustão" },
+];
 
 const CozinhaIndustrial = () => {
   return (
@@ -137,191 +164,7 @@ const CozinhaIndustrial = () => {
                 Conheça alguns dos equipamentos em aço inox que fabricamos
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={cozinhaCompleta1} 
-                    alt="Cozinha Industrial Completa" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={mesaTrabalhoEstrutura} 
-                    alt="Mesa de Trabalho em Estrutura" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={bancadaPias} 
-                    alt="Bancada com Pias" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={cozinhaCompleta2} 
-                    alt="Cozinha Industrial Completa" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={equipamentoCocao} 
-                    alt="Equipamento de Cocção" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={coifaBancada}
-                    alt="Coifa e Bancada Industrial" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={coifaMesas2} 
-                    alt="Coifa e Mesas de Trabalho" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={piaCirurgicaLonga} 
-                    alt="Pia Cirúrgica Longa" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={bancadaCompleta} 
-                    alt="Bancada Completa com Pias" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={cozinhaFogaoCoifa} 
-                    alt="Cozinha com Fogão e Coifa" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={balcaoInox} 
-                    alt="Balcão em Aço Inox" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={bancadaLPias} 
-                    alt="Bancada em L com Pias" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={estanteServico} 
-                    alt="Estante de Serviço" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={buffetBanhoMaria} 
-                    alt="Buffet Banho Maria" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={balcaoPortas} 
-                    alt="Balcão com Portas" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={mesaPrateleiras} 
-                    alt="Mesa com Prateleiras" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={balcaoRefrigeradoPia} 
-                    alt="Balcão Refrigerado com Pia" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={gabinetePia} 
-                    alt="Gabinete com Pia" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={coifaGrande} 
-                    alt="Coifa Industrial Grande" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={coifaSuspensa} 
-                    alt="Coifa Suspensa" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={coifaParede} 
-                    alt="Coifa de Parede" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={coifaFiltros} 
-                    alt="Coifa com Filtros" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={dutoExaustao} 
-                    alt="Duto de Exaustão" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </div>
+              <ImageLightbox images={galleryImages} />
             </div>
           </div>
         </section>
