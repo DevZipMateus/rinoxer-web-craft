@@ -9,13 +9,10 @@ import mesaTrabalhoEstrutura from "@/assets/cozinha/mesa-trabalho-estrutura.jpg"
 import bancadaPias from "@/assets/cozinha/bancada-pias.jpg";
 import cozinhaCompleta2 from "@/assets/cozinha/cozinha-completa-2.jpg";
 import equipamentoCocao from "@/assets/cozinha/equipamento-cocao.jpg";
-import coifaMesas1 from "@/assets/cozinha/coifa-mesas-1.jpg";
 import coifaBancada from "@/assets/cozinha/coifa-bancada.jpg";
 import coifaMesas2 from "@/assets/cozinha/coifa-mesas-2.jpg";
-import coifaIndustrial from "@/assets/cozinha/coifa-industrial.jpg";
 import piaCirurgicaLonga from "@/assets/cozinha/pia-cirurgica-longa.jpg";
 import bancadaCompleta from "@/assets/cozinha/bancada-completa.jpg";
-
 const CozinhaIndustrial = () => {
   return (
     <div className="min-h-screen">
@@ -168,14 +165,6 @@ const CozinhaIndustrial = () => {
 
                 <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={coifaMesas1} 
-                    alt="Coifa e Mesas de Trabalho" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
                     src={coifaBancada}
                     alt="Coifa e Bancada Industrial" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -186,14 +175,6 @@ const CozinhaIndustrial = () => {
                   <img 
                     src={coifaMesas2} 
                     alt="Coifa e Mesas de Trabalho" 
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={coifaIndustrial} 
-                    alt="Coifa Industrial" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
