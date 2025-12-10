@@ -13,6 +13,17 @@ import coifaBancada from "@/assets/cozinha/coifa-bancada.jpg";
 import coifaMesas2 from "@/assets/cozinha/coifa-mesas-2.jpg";
 import piaCirurgicaLonga from "@/assets/cozinha/pia-cirurgica-longa.jpg";
 import bancadaCompleta from "@/assets/cozinha/bancada-completa.jpg";
+import cozinhaFogaoCoifa from "@/assets/cozinha/cozinha-fogao-coifa.jpg";
+import balcaoInox from "@/assets/cozinha/balcao-inox.jpg";
+import bancadaLPias from "@/assets/cozinha/bancada-l-pias.jpg";
+import estanteServico from "@/assets/cozinha/estante-servico.jpg";
+import buffetBanhoMaria from "@/assets/cozinha/buffet-banho-maria.jpg";
+import balcaoPortas from "@/assets/cozinha/balcao-portas.jpg";
+import mesaPrateleiras from "@/assets/cozinha/mesa-prateleiras.jpg";
+import balcaoRefrigeradoPia from "@/assets/cozinha/balcao-refrigerado-pia.jpg";
+import gabinetePia from "@/assets/cozinha/gabinete-pia.jpg";
+import coifaGrande from "@/assets/cozinha/coifa-grande.jpg";
+
 const CozinhaIndustrial = () => {
   return (
     <div className="min-h-screen">
@@ -191,6 +202,86 @@ const CozinhaIndustrial = () => {
                   <img 
                     src={bancadaCompleta} 
                     alt="Bancada Completa com Pias" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={cozinhaFogaoCoifa} 
+                    alt="Cozinha com Fogão e Coifa" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={balcaoInox} 
+                    alt="Balcão em Aço Inox" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={bancadaLPias} 
+                    alt="Bancada em L com Pias" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={estanteServico} 
+                    alt="Estante de Serviço" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={buffetBanhoMaria} 
+                    alt="Buffet Banho Maria" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={balcaoPortas} 
+                    alt="Balcão com Portas" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={mesaPrateleiras} 
+                    alt="Mesa com Prateleiras" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={balcaoRefrigeradoPia} 
+                    alt="Balcão Refrigerado com Pia" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={gabinetePia} 
+                    alt="Gabinete com Pia" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={coifaGrande} 
+                    alt="Coifa Industrial Grande" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
