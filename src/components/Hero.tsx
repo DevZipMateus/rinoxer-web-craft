@@ -16,20 +16,22 @@ const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img src="/hero-background.jpg" alt="Cozinha Industrial em Aço Inox" className="w-full h-full object-cover" />
+        <img src="/hero-background.jpg" alt="Área Alimentação em Aço Inox" className="w-full h-full object-cover" />
       </div>
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          {/* Texto centralizado com fundo preto esmaecido */}
-          <div className="text-center animate-fade-in backdrop-blur-sm rounded-2xl p-8 md:p-12 bg-black/[0.12]">
-            {/* H1 - Nome da empresa */}
-            <h1 className="text-5xl font-bold mb-6 text-white md:text-7xl">
-              Rinoxer
+        <div className="text-center max-w-4xl mx-auto">
+          <div className="animate-fade-in">
+            {/* Badge */}
+            <span className="inline-block px-4 py-2 bg-primary/30 backdrop-blur-sm text-white rounded-full text-sm font-medium mb-6">
+              Excelência em Aço Inox desde 2008
+            </span>
+            {/* H1 - Título principal */}
+            <h1 className="text-3xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+              Rinoxer Equipamentos em Aço Inox
             </h1>
-
             {/* H2 - Descrição da empresa */}
             <h2 className="text-xl mb-8 leading-relaxed text-slate-50 md:text-2xl">
-              Rinoxer Fabricação de Cozinha Industrial em Aço Inox
+              Rinoxer Fabricação de Área Alimentação em Aço Inox
             </h2>
 
             {/* Slogan */}

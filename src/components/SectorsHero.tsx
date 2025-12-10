@@ -29,25 +29,26 @@ const SectorsHero = () => {
             </div>
           </div>
 
-          {/* Cozinha Industrial */}
+          {/* Área Alimentação */}
           <div className="relative group overflow-hidden rounded-lg shadow-lg">
-          <div className="aspect-video relative">
-            <img 
-              src={cozinhaIndustrialImg} 
-              alt="Cozinha Industrial - Equipamentos em Aço Inox" 
-              className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
-            />
-          </div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Cozinha Industrial
-              </h3>
-              <Link 
-                to="/cozinha-industrial"
-                className="px-8 py-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-semibold transition-all duration-300 hover:shadow-elegant"
-              >
-                Saiba Mais
-              </Link>
+            <div className="aspect-video relative">
+              <img 
+                src={cozinhaIndustrialImg} 
+                alt="Área Alimentação - Equipamentos em Aço Inox" 
+                className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                  Área Alimentação
+                </h3>
+                <Link 
+                  to="/cozinha-industrial"
+                  className="px-8 py-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-semibold transition-all duration-300 hover:shadow-elegant"
+                >
+                  Saiba Mais
+                </Link>
+              </div>
             </div>
           </div>
         </div>

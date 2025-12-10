@@ -26,7 +26,7 @@ const CozinhaIndustrial = () => {
           <div className="absolute inset-0">
             <img 
               src={cozinhaIndustrialImg} 
-              alt="Cozinha Industrial" 
+              alt="Área Alimentação" 
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/50" />
@@ -40,7 +40,7 @@ const CozinhaIndustrial = () => {
               Voltar
             </Link>
             <h1 className="text-4xl md:text-6xl font-bold text-white">
-              Cozinha Industrial
+              Área Alimentação
             </h1>
             <p className="text-xl text-white mt-4">
               Equipamentos Completos em Aço Inox para sua Cozinha Profissional
@@ -98,7 +98,7 @@ const CozinhaIndustrial = () => {
                   Solicite seu Projeto Personalizado
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Nossa equipe está pronta para desenvolver a cozinha industrial 
+                  Nossa equipe está pronta para desenvolver a área alimentação 
                   ideal para o seu negócio. Solicite um orçamento sem compromisso.
                 </p>
                 <a 
@@ -119,7 +119,7 @@ const CozinhaIndustrial = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold mb-4 text-center">
-                Nossos Equipamentos para Cozinha Industrial
+                Nossos Equipamentos para Área Alimentação
               </h2>
               <p className="text-lg text-muted-foreground mb-12 text-center">
                 Conheça alguns dos equipamentos em aço inox que fabricamos

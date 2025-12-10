@@ -26,7 +26,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/cozinha-industrial" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Cozinha Industrial
+                  Área Alimentação
                 </Link>
               </li>
               <li>
