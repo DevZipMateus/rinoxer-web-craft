@@ -46,34 +46,34 @@ const Products = () => {
   ];
 
   return (
-    <section id="products" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4">
+    <section id="products" className="py-12 sm:py-16 lg:py-20 bg-gradient-subtle">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Produtos
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground">
             Equipamentos em aço inox de alta qualidade para diversas aplicações industriais
           </p>
         </div>
 
         {/* Products Grid */}
-        <div className="max-w-6xl mx-auto mb-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-6xl mx-auto mb-12 sm:mb-20">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {productCategories.map((product, index) => (
               <div 
                 key={index}
-                className="bg-background border border-border rounded-xl p-6 hover:shadow-elegant hover:scale-105 transition-all duration-300 animate-fade-in"
+                className="bg-background border border-border rounded-xl p-4 sm:p-6 hover:shadow-elegant hover:scale-105 transition-all duration-300 animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-14 h-14 mb-4 rounded-lg bg-gradient-primary flex items-center justify-center">
-                  <product.icon className="text-primary-foreground" size={28} />
+                <div className="w-10 h-10 sm:w-14 sm:h-14 mb-3 sm:mb-4 rounded-lg bg-gradient-primary flex items-center justify-center">
+                  <product.icon className="text-primary-foreground" size={20} />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-2">
+                <h3 className="text-base sm:text-xl font-bold text-foreground mb-1 sm:mb-2">
                   {product.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
                   {product.description}
                 </p>
               </div>
@@ -83,22 +83,22 @@ const Products = () => {
 
         {/* Sectors */}
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-3xl font-bold text-center text-foreground mb-12">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-8 sm:mb-12">
             Setores atendidos
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {sectors.map((sector, index) => (
               <div 
                 key={index}
-                className="bg-background border border-border rounded-xl p-8 animate-fade-in"
+                className="bg-background border border-border rounded-xl p-6 sm:p-8 animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <h4 className="text-2xl font-bold text-primary mb-6">
+                <h4 className="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6">
                   {sector.title}
                 </h4>
-                <ul className="space-y-3">
+                <ul className="space-y-2 sm:space-y-3">
                   {sector.items.map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-3 text-muted-foreground">
+                    <li key={idx} className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base text-muted-foreground">
                       <div className="w-2 h-2 rounded-full bg-accent"></div>
                       {item}
                     </li>
@@ -110,18 +110,18 @@ const Products = () => {
         </div>
 
         {/* CTA */}
-        <div className="max-w-3xl mx-auto mt-16 text-center bg-gradient-primary rounded-2xl p-8 md:p-12 animate-fade-in">
-          <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
+        <div className="max-w-3xl mx-auto mt-12 sm:mt-16 text-center bg-gradient-primary rounded-2xl p-6 sm:p-8 md:p-12 animate-fade-in">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-foreground mb-3 sm:mb-4">
             Precisa de um produto personalizado?
           </h3>
-          <p className="text-primary-foreground/90 mb-8">
+          <p className="text-sm sm:text-base text-primary-foreground/90 mb-6 sm:mb-8">
             Desenvolvemos soluções sob medida para atender às necessidades específicas do seu negócio
           </p>
           <a
             href="https://wa.me/5519983134643"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-4 bg-background hover:bg-secondary text-primary font-semibold rounded-lg transition-all duration-300 hover:shadow-elegant"
+            className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-background hover:bg-secondary text-primary font-semibold rounded-lg transition-all duration-300 hover:shadow-elegant text-sm sm:text-base"
           >
             Solicitar Orçamento
           </a>

@@ -15,14 +15,14 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-12 sm:py-16 lg:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Serviços
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground">
             Além de fabricar, oferecemos serviços especializados para garantir o melhor desempenho dos equipamentos
           </p>
         </div>
@@ -32,24 +32,24 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-card border border-border rounded-xl p-8 md:p-10 hover:shadow-elegant transition-all duration-300 animate-fade-in"
+              className="bg-card border border-border rounded-xl p-6 sm:p-8 md:p-10 hover:shadow-elegant transition-all duration-300 animate-fade-in"
             >
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-gradient-primary flex items-center justify-center">
-                  <Wrench className="text-primary-foreground" size={32} />
+              <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-lg bg-gradient-primary flex items-center justify-center">
+                  <Wrench className="text-primary-foreground" size={24} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-3 sm:mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
                     {service.description}
                   </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                     {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center gap-3">
-                        <CheckCircle2 className="text-accent flex-shrink-0" size={20} />
-                        <span className="text-foreground">{feature}</span>
+                      <div key={idx} className="flex items-center gap-2 sm:gap-3">
+                        <CheckCircle2 className="text-accent flex-shrink-0" size={18} />
+                        <span className="text-sm sm:text-base text-foreground">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -60,11 +60,11 @@ const Services = () => {
         </div>
 
         {/* Additional Info */}
-        <div className="max-w-4xl mx-auto mt-12 bg-secondary/50 rounded-xl p-8 text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-4">
+        <div className="max-w-4xl mx-auto mt-8 sm:mt-12 bg-secondary/50 rounded-xl p-6 sm:p-8 text-center">
+          <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3 sm:mb-4">
             Fabricação personalizada
           </h3>
-          <p className="text-muted-foreground mb-6 leading-relaxed">
+          <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
             Todos os nossos produtos podem ser fabricados sob medida para atender às necessidades 
             específicas do seu projeto. Entre em contato e converse com nossa equipe técnica.
           </p>
@@ -72,7 +72,7 @@ const Services = () => {
             href="https://wa.me/5519983134643"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-4 bg-primary hover:bg-primary-dark text-primary-foreground font-semibold rounded-lg transition-all duration-300 hover:shadow-elegant"
+            className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-primary hover:bg-primary-dark text-primary-foreground font-semibold rounded-lg transition-all duration-300 hover:shadow-elegant text-sm sm:text-base"
           >
             Fale com Especialista
           </a>

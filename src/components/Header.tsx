@@ -65,37 +65,37 @@ const Header = () => {
     id: "contact"
   }];
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-soft" : "bg-background"}`}>
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <button onClick={() => scrollToSection("home")} className="flex items-center space-x-3 transition-transform duration-300 hover:scale-105" aria-label="Ir para início">
             <img src={logoRinoxer} alt="Rinoxer - A Força em Aço Inox" style={{
             filter: 'brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(203deg) brightness(97%) contrast(97%)'
-          }} className="h-32 w-auto" />
+          }} className="h-20 sm:h-24 md:h-32 w-auto" />
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1">
-            {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="px-4 py-2 text-foreground hover:text-primary transition-colors duration-300 font-medium">
+          <nav className="hidden lg:flex items-center space-x-1">
+            {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="px-3 lg:px-4 py-2 text-foreground hover:text-primary transition-colors duration-300 font-medium text-sm lg:text-base">
                 {item.label}
               </button>)}
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:block">
-            <a href="https://wa.me/5519983134643" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-primary hover:bg-primary-dark text-primary-foreground rounded-lg font-semibold transition-all duration-300 hover:shadow-elegant">
+          <div className="hidden lg:block">
+            <a href="https://wa.me/5519983134643" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 lg:py-3 bg-primary hover:bg-primary-dark text-primary-foreground rounded-lg font-semibold transition-all duration-300 hover:shadow-elegant text-sm lg:text-base">
               Fale Conosco
             </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden p-2 text-foreground hover:text-primary transition-colors" aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}>
+          <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="lg:hidden p-2 text-foreground hover:text-primary transition-colors" aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}>
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && <nav className="md:hidden py-4 border-t border-border animate-fade-in">
+        {isMobileMenuOpen && <nav className="lg:hidden py-4 border-t border-border animate-fade-in">
             {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="block w-full text-left px-4 py-3 text-foreground hover:text-primary hover:bg-secondary/50 transition-colors duration-300 font-medium">
                 {item.label}
               </button>)}

@@ -103,13 +103,13 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+    <section className="py-12 sm:py-16 lg:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4">
             Avaliações dos Clientes
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground">
             Veja o que nossos clientes dizem sobre nós
           </p>
         </div>
@@ -123,24 +123,24 @@ const Testimonials = () => {
             }}
             className="w-full"
           >
-            <CarouselContent>
+            <CarouselContent className="-ml-2 sm:-ml-4">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2 h-full">
-                    <Card className="h-[280px] bg-card border-border hover:shadow-elegant transition-all duration-300 flex flex-col">
-                      <CardContent className="p-6 flex flex-col h-full">
-                        <div className="flex gap-1 mb-4">
+                <CarouselItem key={index} className="pl-2 sm:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 sm:p-2 h-full">
+                    <Card className="h-[240px] sm:h-[280px] bg-card border-border hover:shadow-elegant transition-all duration-300 flex flex-col">
+                      <CardContent className="p-4 sm:p-6 flex flex-col h-full">
+                        <div className="flex gap-0.5 sm:gap-1 mb-3 sm:mb-4">
                           {[...Array(testimonial.rating)].map((_, i) => (
                             <Star
                               key={i}
-                              className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                              className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400"
                             />
                           ))}
                         </div>
-                        <p className="text-foreground mb-4 flex-1 text-sm line-clamp-6 font-playfair italic">
+                        <p className="text-foreground mb-3 sm:mb-4 flex-1 text-xs sm:text-sm line-clamp-5 sm:line-clamp-6 font-playfair italic">
                           "{testimonial.text}"
                         </p>
-                        <p className="text-primary font-semibold mt-auto font-playfair">
+                        <p className="text-primary font-semibold mt-auto font-playfair text-sm sm:text-base">
                           {testimonial.name}
                         </p>
                       </CardContent>
@@ -149,15 +149,15 @@ const Testimonials = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="hidden sm:flex -left-4 sm:-left-12" />
+            <CarouselNext className="hidden sm:flex -right-4 sm:-right-12" />
           </Carousel>
           
-          <div className="text-center mt-8">
+          <div className="text-center mt-6 sm:mt-8">
             <Button
               asChild
               size="lg"
-              className="font-playfair text-lg shadow-elegant hover:shadow-soft transition-all duration-300"
+              className="font-playfair text-base sm:text-lg shadow-elegant hover:shadow-soft transition-all duration-300"
             >
               <a 
                 href="https://www.google.com/search?q=rinoxer&oq=rinoxer&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyDAgCEC4YChixAxiABDIMCAMQLhgKGLEDGIAEMg8IBBAuGAoYgwEYsQMYgAQyBggFEEUYPDIGCAYQRRg9MgYIBxBFGDzSAQgyMDQ3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x94c8bbc9b734ab8f:0x1eea48fcbc2d4bb8,1,,,,"
@@ -165,7 +165,7 @@ const Testimonials = () => {
                 rel="noopener noreferrer"
               >
                 Ver mais avaliações
-                <ExternalLink className="ml-2 w-5 h-5" />
+                <ExternalLink className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             </Button>
           </div>

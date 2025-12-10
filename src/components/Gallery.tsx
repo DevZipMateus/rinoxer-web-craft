@@ -74,11 +74,11 @@ const Gallery = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Nossa Galeria</h2>
-          <p className="text-lg text-muted-foreground">Conheça nossos projetos e realizações</p>
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-subtle">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4">Nossa Galeria</h2>
+          <p className="text-base sm:text-lg text-muted-foreground">Conheça nossos projetos e realizações</p>
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -112,19 +112,19 @@ const Gallery = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="hidden sm:flex -left-4 sm:-left-12" />
+            <CarouselNext className="hidden sm:flex -right-4 sm:-right-12" />
           </Carousel>
 
           {/* Indicadores */}
-          <div className="flex justify-center gap-2 mt-6">
+          <div className="flex justify-center gap-2 mt-4 sm:mt-6">
             {mediaItems.map((_, index) => (
               <button
                 key={index}
                 onClick={() => api?.scrollTo(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   index === current
-                    ? "w-8 bg-primary"
+                    ? "w-6 sm:w-8 bg-primary"
                     : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
                 }`}
                 aria-label={`Ir para slide ${index + 1}`}

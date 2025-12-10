@@ -47,7 +47,7 @@ const ImageLightbox = ({ images }: ImageLightboxProps) => {
   return (
     <>
       {/* Gallery Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
         {images.map((image, index) => (
           <div
             key={index}
@@ -57,11 +57,11 @@ const ImageLightbox = ({ images }: ImageLightboxProps) => {
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-40 sm:h-52 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
               style={image.objectPosition ? { objectPosition: image.objectPosition } : undefined}
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-              <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-medium">
+              <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs sm:text-sm font-medium">
                 Clique para ampliar
               </span>
             </div>
@@ -72,7 +72,7 @@ const ImageLightbox = ({ images }: ImageLightboxProps) => {
       {/* Lightbox Modal */}
       {selectedIndex !== null && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 animate-fade-in"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 animate-fade-in p-4"
           onClick={closeLightbox}
           onKeyDown={handleKeyDown}
           tabIndex={0}
@@ -80,32 +80,32 @@ const ImageLightbox = ({ images }: ImageLightboxProps) => {
           {/* Close Button */}
           <button
             onClick={closeLightbox}
-            className="absolute top-4 right-4 z-50 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            className="absolute top-2 right-2 sm:top-4 sm:right-4 z-50 p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
             aria-label="Fechar"
           >
-            <X className="w-8 h-8 text-white" />
+            <X className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
           </button>
 
           {/* Previous Button */}
           <button
             onClick={goToPrevious}
-            className="absolute left-4 z-50 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            className="absolute left-2 sm:left-4 z-50 p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
             aria-label="Anterior"
           >
-            <ChevronLeft className="w-8 h-8 text-white" />
+            <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
           </button>
 
           {/* Image */}
           <div
-            className="max-w-[90vw] max-h-[90vh] animate-scale-in"
+            className="max-w-[90vw] max-h-[85vh] sm:max-h-[90vh] animate-scale-in"
             onClick={(e) => e.stopPropagation()}
           >
             <img
               src={images[selectedIndex].src}
               alt={images[selectedIndex].alt}
-              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              className="max-w-full max-h-[75vh] sm:max-h-[85vh] object-contain rounded-lg"
             />
-            <p className="text-white text-center mt-4 text-lg">
+            <p className="text-white text-center mt-2 sm:mt-4 text-sm sm:text-lg">
               {images[selectedIndex].alt}
             </p>
           </div>
@@ -113,14 +113,14 @@ const ImageLightbox = ({ images }: ImageLightboxProps) => {
           {/* Next Button */}
           <button
             onClick={goToNext}
-            className="absolute right-4 z-50 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            className="absolute right-2 sm:right-4 z-50 p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
             aria-label="Próximo"
           >
-            <ChevronRight className="w-8 h-8 text-white" />
+            <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
           </button>
 
           {/* Image Counter */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm">
+          <div className="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 text-white text-xs sm:text-sm">
             {selectedIndex + 1} / {images.length}
           </div>
         </div>
