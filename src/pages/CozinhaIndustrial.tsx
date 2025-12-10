@@ -23,6 +23,10 @@ import mesaPrateleiras from "@/assets/cozinha/mesa-prateleiras.jpg";
 import balcaoRefrigeradoPia from "@/assets/cozinha/balcao-refrigerado-pia.jpg";
 import gabinetePia from "@/assets/cozinha/gabinete-pia.jpg";
 import coifaGrande from "@/assets/cozinha/coifa-grande.jpg";
+import coifaSuspensa from "@/assets/cozinha/coifa-suspensa.jpg";
+import coifaParede from "@/assets/cozinha/coifa-parede.jpg";
+import coifaFiltros from "@/assets/cozinha/coifa-filtros.jpg";
+import dutoExaustao from "@/assets/cozinha/duto-exaustao.jpg";
 
 const CozinhaIndustrial = () => {
   return (
@@ -282,6 +286,38 @@ const CozinhaIndustrial = () => {
                   <img 
                     src={coifaGrande} 
                     alt="Coifa Industrial Grande" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={coifaSuspensa} 
+                    alt="Coifa Suspensa" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={coifaParede} 
+                    alt="Coifa de Parede" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={coifaFiltros} 
+                    alt="Coifa com Filtros" 
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={dutoExaustao} 
+                    alt="Duto de Exaustão" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
