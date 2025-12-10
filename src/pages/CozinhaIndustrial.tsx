@@ -52,7 +52,7 @@ const galleryImages = [
   { src: coifaSuspensa, alt: "Coifa Suspensa" },
   { src: coifaParede, alt: "Coifa de Parede" },
   { src: coifaFiltros, alt: "Coifa com Filtros" },
-  { src: dutoExaustao, alt: "Duto de Exaustão" },
+  { src: dutoExaustao, alt: "Duto de Exaustão", objectPosition: "top" },
 ];
 
 const CozinhaIndustrial = () => {
