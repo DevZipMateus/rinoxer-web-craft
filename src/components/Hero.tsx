@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <div className="animate-fade-in">
+          <div className="animate-fade-in bg-black/40 backdrop-blur-sm rounded-2xl px-6 sm:px-10 py-8 sm:py-12">
             {/* Badge */}
             
             {/* H1 - Título principal */}
