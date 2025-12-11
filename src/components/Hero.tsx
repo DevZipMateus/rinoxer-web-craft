@@ -22,9 +22,7 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="animate-fade-in">
             {/* Badge */}
-            <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-primary/30 backdrop-blur-sm text-white rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
-              Excelência em Aço Inox desde 2008
-            </span>
+            
             {/* H1 - Título principal */}
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white">
               Rinoxer Equipamentos em Aço Inox
