@@ -9,7 +9,7 @@ import bancadaLab from "@/assets/saude/bancada-laboratorio.jpg";
 import armarioInox from "@/assets/saude/armario-inox.jpg";
 import carrinhoMed from "@/assets/saude/carrinho-medicacao.jpg";
 import piaCirurgica from "@/assets/saude/pia-cirurgica.jpg";
-import mesaInstrumentos from "@/assets/saude/mesa-instrumentos.jpg";
+
 import bancadaSaude from "@/assets/saude/bancada-saude.jpg";
 import lixeiraHospitalar from "@/assets/saude/lixeira-hospitalar.jpg";
 import macaExame from "@/assets/saude/maca-exame.jpg";
@@ -25,7 +25,7 @@ const galleryImages = [
   { src: armarioInox, alt: "Armário em Aço Inox" },
   { src: carrinhoMed, alt: "Carrinho de Medicação" },
   { src: piaCirurgica, alt: "Pia Cirúrgica" },
-  { src: mesaInstrumentos, alt: "Mesa para Instrumentos" },
+  
   { src: bancadaSaude, alt: "Bancada em Aço Inox" },
   { src: lixeiraHospitalar, alt: "Lixeira Hospitalar" },
   { src: carroUtilitario, alt: "Carro Utilitário" },
