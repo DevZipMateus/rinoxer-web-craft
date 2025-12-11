@@ -11,7 +11,7 @@ import carrinhoMed from "@/assets/saude/carrinho-medicacao.jpg";
 import piaCirurgica from "@/assets/saude/pia-cirurgica.jpg";
 
 import bancadaSaude from "@/assets/saude/bancada-saude.jpg";
-import mesaDescarte from "@/assets/saude/mesa-descarte.jpg";
+import ultracongelador from "@/assets/saude/ultracongelador.jpg";
 import macaExame from "@/assets/saude/maca-exame.jpg";
 import bandejaEsterilizacao from "@/assets/saude/bandeja-esterilizacao.jpg";
 import cabeceiraLeito from "@/assets/saude/cabeceira-leito.jpg";
@@ -27,7 +27,7 @@ const galleryImages = [
   { src: piaCirurgica, alt: "Pia Cirúrgica" },
   
   { src: bancadaSaude, alt: "Bancada em Aço Inox" },
-  { src: mesaDescarte, alt: "Mesa de Descarte em Aço Inox" },
+  { src: ultracongelador, alt: "Ultracongelador em Aço Inox" },
   { src: carroUtilitario, alt: "Carro Utilitário" },
   { src: bandejaEsterilizacao, alt: "Bandeja de Esterilização" },
   { src: cabeceiraLeito, alt: "Cabeceira de Leito" },
