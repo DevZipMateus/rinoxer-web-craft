@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -49,20 +49,27 @@ const Footer = () => {
               <li className="flex items-start gap-2 justify-center sm:justify-start">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span className="text-xs sm:text-sm text-primary-foreground/80">
-                  Rua Maria do Carmo Tagliari, 235 - Hortolândia, SP
+                  Rua Osmilton Teixeira, Nº 1029 A - Chácara Recreio Alvorada - Hortolândia SP - CEP: 13183-751
                 </span>
               </li>
               <li className="flex items-center gap-2 justify-center sm:justify-start">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <a href="tel:+551932017820" className="text-xs sm:text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  (19) 3201-7820
+                <a href="tel:+5519983134643" className="text-xs sm:text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  (19) 98313-4643
                 </a>
               </li>
               <li className="flex items-center gap-2 justify-center sm:justify-start">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <a href="mailto:contato@rinoxer.com.br" className="text-xs sm:text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  contato@rinoxer.com.br
+                <a href="mailto:vendas@rinoxer.com.br" className="text-xs sm:text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  vendas@rinoxer.com.br
                 </a>
+              </li>
+              <li className="flex items-start gap-2 justify-center sm:justify-start">
+                <Clock className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span className="text-xs sm:text-sm text-primary-foreground/80">
+                  Seg-Qui: 7:30-12:00 / 13:30-17:00<br />
+                  Sex: 7:30-12:00 / 13:30-16:00
+                </span>
               </li>
             </ul>
           </div>
