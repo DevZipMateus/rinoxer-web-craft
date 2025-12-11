@@ -18,6 +18,7 @@ import cabeceiraLeito from "@/assets/saude/cabeceira-leito.jpg";
 import balcaoFarmacia from "@/assets/saude/balcao-farmacia.jpg";
 import balcaoFarmacia2 from "@/assets/saude/balcao-farmacia-2.jpg";
 import carroUtilitario from "@/assets/saude/carro-utilitario.jpg";
+import cozinhaCompleta2 from "@/assets/cozinha/cozinha-completa-2.jpg";
 
 const galleryImages = [
   { src: bancadaLab, alt: "Bancada para Laboratório" },
@@ -32,6 +33,7 @@ const galleryImages = [
   { src: cabeceiraLeito, alt: "Cabeceira de Leito" },
   { src: balcaoFarmacia, alt: "Balcão para Farmácia" },
   { src: balcaoFarmacia2, alt: "Balcão para Farmácia" },
+  { src: cozinhaCompleta2, alt: "Cozinha Industrial Completa" },
 ];
 
 const AreaSaude = () => {
