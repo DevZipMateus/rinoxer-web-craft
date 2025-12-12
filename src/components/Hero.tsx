@@ -35,7 +35,7 @@ const Hero = () => {
 
             {/* H2 - Descrição da empresa */}
             <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12 leading-relaxed text-slate-50 mt-2 sm:mt-4">
-              Rinoxer Fabricação de Cozinha Industrial em Aço Inox
+              Equipamentos em Aço Inoxidável
             </h2>
 
             {/* CTAs */}
