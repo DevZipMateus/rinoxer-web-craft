@@ -27,15 +27,16 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight text-white">
               Rinoxer
             </h1>
-            {/* H2 - Descrição da empresa */}
-            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 leading-relaxed text-slate-50 mt-2 sm:mt-4">
-              Rinoxer Fabricação de Cozinha Industrial em Aço Inox
-            </h2>
-
+            
             {/* Slogan */}
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-8 sm:mb-12 text-slate-50">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mt-2 sm:mt-4 text-slate-50">
               A Força em Aço Inox
             </p>
+
+            {/* H2 - Descrição da empresa */}
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12 leading-relaxed text-slate-50 mt-2 sm:mt-4">
+              Rinoxer Fabricação de Cozinha Industrial em Aço Inox
+            </h2>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
