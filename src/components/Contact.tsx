@@ -13,7 +13,7 @@ const Contact = () => {
   }, {
     icon: MapPin,
     title: "Endereço",
-    value: "Rua Osmilton Teixeira, Nº 1029 A - Chácara Recreio Alvorada - Hortolândia SP - CEP: 13183-751",
+    value: "Rua Raimundo Baldoino dos Santos, 36 - Jardim Flórida, Quadra H, Lote 7 - CEP: 13189-890",
     link: null
   }, {
     icon: Clock,
@@ -64,6 +64,23 @@ const Contact = () => {
                   </div>
                 </div>
               </div>)}
+          </div>
+        </div>
+
+        {/* Google Maps */}
+        <div className="max-w-5xl mx-auto mb-8 sm:mb-12">
+          <div className="rounded-xl overflow-hidden border border-border shadow-soft">
+            <iframe
+              src="https://maps.google.com/maps?q=-22.8354151,-47.2194773&z=16&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização Rinoxer"
+              className="w-full h-[300px] sm:h-[400px]"
+            />
           </div>
         </div>
 
