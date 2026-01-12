@@ -49,7 +49,7 @@ const Footer = () => {
               <li className="flex items-start gap-2 justify-center sm:justify-start">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span className="text-xs sm:text-sm text-primary-foreground/80">
-                  Rua Osmilton Teixeira, Nº 1029 A - Chácara Recreio Alvorada - Hortolândia SP - CEP: 13183-751
+                  Rua Raimundo Baldoino dos Santos, 36 - Jardim Flórida, Quadra H, Lote 7 - CEP: 13189-890
                 </span>
               </li>
               <li className="flex items-center gap-2 justify-center sm:justify-start">
