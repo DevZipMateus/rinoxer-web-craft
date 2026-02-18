@@ -40,6 +40,12 @@ RewriteRule ^ /index.html [L]
 # Desativa qualquer X-Frame-Options restritivo para o GTM Preview
 # (o GTM Preview abre o site em um iframe interno)
 <IfModule mod_headers.c>
+    # Exclui arquivos estáticos (xml, txt) das restrições de CSP e X-Frame
+    <FilesMatch "\.(xml|txt)$">
+        Header unset Content-Security-Policy
+        Header unset X-Frame-Options
+    </FilesMatch>
+
     # Remove qualquer DENY/SAMEORIGIN herdado do servidor
     Header always unset X-Frame-Options
 
@@ -73,7 +79,7 @@ RewriteRule ^ /index.html [L]
             https://www.googletagmanager.com \
             https://bid.g.doubleclick.net; \
         font-src 'self' data: https://fonts.gstatic.com; \
-        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; \
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://tagmanager.google.com; \
     "
 
     # Cabeçalhos de segurança adicionais
